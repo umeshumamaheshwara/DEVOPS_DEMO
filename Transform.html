@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        #container{
+            background-color: black;
+            height: 500px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box{
+            
+            height: 200px;
+            width: 250px;
+            background-color: blueviolet;
+            
+        }
+        #one{
+           transform: scale(1,2);
+        }
+        #two{
+            transform: skew(-45deg);
+        }
+        #three{
+            transform: translate(-100px,-100px);
+        }
+        #four{
+            transform: rotate(120deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="one">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, id.</p>
+        </div>
+        <div class="box" id="two">Box2</div>
+        <div class="box" id="three">Box3</div>
+        <div class="box" id="four">Box4</div>
+    </div>
+    
+</body>
+</html>
