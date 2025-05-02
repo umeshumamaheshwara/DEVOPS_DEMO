@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            /* box-sizing: border-box; */
+            background-image: url("img.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+    
+        }
+        .header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            margin: 5px;
+        }
+        .left img{
+            margin-top: 10px;
+            margin-right:30px ;
+
+          
+
+        }
+       
+        .mid{
+           
+            width: 800px;
+            
+        }
+        .right{
+          
+            
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-evenly;
+            /* border: 2px solid black; */
+            
+            
+        }
+        .navbar li {
+            list-style: none;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px;
+            font-size: 25px;
+
+            
+        }
+       .navbar a{
+            text-decoration: none;
+            color: whitesmoke;
+            
+        }
+        .navbar a:hover , .navbar a.active{
+            text-decoration: underline;
+            color: goldenrod;
+            
+        }
+        #logo{
+            width: 136px;
+            
+            filter: invert(-10%);
+
+        }
+        button{
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 50px;
+            margin: 10px;
+            width: 120px;
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(109, 108, 108);
+        }
+        button:hover{
+            text-decoration: underline;
+            color: goldenrod;
+        
+        }
+        .container{
+            border: 2px solid white;
+            margin-left: 800px;
+            margin-top: 200px;
+            color: whitesmoke;
+            height: 300px;
+            padding: 30px;
+            width: 35%;
+            border-radius: 50px;
+            transition: all;
+            box-shadow: 10px 10px  black;
+            
+        
+        }
+        .container:hover{
+            border: 0px solid black;
+            box-shadow: none;
+        
+          
+        }
+        .container h1{
+            text-shadow: 2px 2px 10px red;
+        }
+        .form-group input{
+            text-align: center;
+            padding: 6px;
+            display: block;
+            margin: auto;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        #one{
+            margin: 10px 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+
+        <div class="left">
+            
+                <img src="1.png" alt="" id="logo" >
+            </div>
+           
+        
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="">Home </a>    </li>
+                <li><a href="">About</a></li>
+                <li><a href="">Fitness Calculator</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button>Contact Us</button>
+            <button>Email Us</button>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join Best Gym in Rajaji Nagar Now</h1>
+        <form action="get" >
+            <div class="form-group">
+                <input type="text" name="Name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="number" name="Age" placeholder="Enter Your Age" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="gender" placeholder="Enter Your gender" required>
+                
+            </div>
+            <div class="form-group">
+                <input type="text" name="Locality" placeholder="Enter Your Locality" required>
+            </div>
+            <button id="one" type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>
